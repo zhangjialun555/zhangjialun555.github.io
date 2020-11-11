@@ -17,7 +17,7 @@ author: zhangjialun
 
 话不多说，直接上图先来看下大屏展示的整体效果。个人比较喜欢这种实用性强的大屏，不要花里胡哨但该有的功也都有。
 
-![首页](https://github.com/zhangjialun555/zhangjialun555.github.io/blob/master/images/2019-11-22-create_blog_with_github_pages/blogPage.png)
+![首页](https://github.com/zhangjialun555/zhangjialun555.github.io/tree/master/images/big_screen/6.29.38.png)
 
 
 
