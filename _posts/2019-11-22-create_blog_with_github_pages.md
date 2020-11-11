@@ -7,8 +7,10 @@ comments: true
 author: zhangjialun
 ---
 
-可创建不同风格的大屏，其中包含背景，边框，颜色，文字等
+可创建不同风格的大屏，其中包含可选背景，边框，颜色，文字等
+
 可权限关联到具体用户，配置相关大屏
+
 可将多个大屏做自由组合，形成可轮播的大屏组
 
 <!-- more -->
@@ -16,6 +18,8 @@ author: zhangjialun
 ## 开始
 
 话不多说，直接上图先来看下大屏展示的整体效果。个人比较喜欢这种实用性强的大屏，不要花里胡哨但该有的功也都有。
+
+![展示](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/6.29.38.png)
 
 下面列举这个大屏具有的功能特性
 
@@ -41,7 +45,7 @@ author: zhangjialun
 
 - 关联权限
 
-![更换背景](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/6.29.38.png)
+
 
 ## 更换背景
 
