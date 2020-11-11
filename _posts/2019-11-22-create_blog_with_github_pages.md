@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "可能是最小巧最全面的自定义化大屏，让自定义大屏达到新高度"
+title: "可能是最灵活最全面的自定义化大屏，让自定义大屏达到新高度"
 date:   2020-11-11
 tags: [geek]
 comments: true
@@ -19,48 +19,41 @@ author: zhangjialun
 
 ![首页](https://raw.githubusercontent.com/lemonchann/lemonchann.github.io/master/images/2019-11-22-create_blog_with_github_pages/blogPage.png)
 
-
-
 下面列举这个博客具有的功能特性，其中我比较看重归档和搜索能力。
 
 ### 支持特性
 
-- 简约风格博客
+- 更换背景
 
-- Powered By Jekyll
+- 自定义标题
 
-- 博客文章搜索
+- 自定义边框
 
-- 自定义社交链接
+- 多组件嵌套
 
-- 网站访客统计
+- 可修改配置
 
-- Google Analytics 网站分析
+- 可实时预览
 
-- Gitalk评论功能
+- 定义行列布局
 
-- 自定义关于about页面
+- 自定义轮训时间
 
-- 支持中文布局
+- echarts图表可拓展性极强
 
-- 支持归档与标签
+- 拖拽微调位置
 
-- 支持改变主题颜色
+- 配置首页Dashboard
 
-- 支持添加文章目录
+- 大屏组组合
 
-  
+- 关联权限
 
-## 建立博客Git仓库
+## 更换背景
 
-首先你要在[github](https://github.com/)上有自己博客仓库，用来生成和存放博客文章。你可以直接fork我的博客仓库。这样你马上有了自己的博客仓库。
+首先你要在大屏配置页面创建新大屏，可选项目标题，描述，是否使用Dashboard，模版背景选择，项目横纵占比等。
 
-[点这里我的博客地址](https://github.com/zhangjialun555/zhangjialun555.github.io)进去点击 fork，之后在你自己的仓库下会看到刚复制的仓库，以后的操作都在你自己的仓库进行，当然想感谢我写这个教程就帮我点个 start 吧！
-
-![fork博客](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/2019-11-22-create_blog_with_github_pages/fork%E5%8D%9A%E5%AE%A2.png)
-
-**版权声明： fork之后_posts文件夹内容是我的博客文章，版权归我所有。你可以选择删除里面的文章替换上自己的博客文章，如需转载需要与我联系授权 **。
-
+![fork博客](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/201605081335_.pic_hd.png)
 
 
 ## 修改博客仓库名称
