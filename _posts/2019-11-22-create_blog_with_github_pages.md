@@ -17,8 +17,6 @@ author: zhangjialun
 
 话不多说，直接上图先来看下大屏展示的整体效果。个人比较喜欢这种实用性强的大屏，不要花里胡哨但该有的功也都有。
 
-![首页](https://raw.githubusercontent.com/lemonchann/lemonchann.github.io/master/images/2019-11-22-create_blog_with_github_pages/blogPage.png)
-
 下面列举这个大屏具有的功能特性
 
 ### 支持特性
@@ -42,6 +40,8 @@ author: zhangjialun
 - 大屏组组合
 
 - 关联权限
+
+![更换背景](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/6.29.38.png)
 
 ## 更换背景
 
