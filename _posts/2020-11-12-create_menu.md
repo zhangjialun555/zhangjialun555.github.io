@@ -55,3 +55,4 @@ author: zhangjialun
 
 已创建的菜单可以通过权限控制进行管理，可以给当前用户或者其他用户分配权限。
 ![关联权限](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/menu/261605163197_.pic_hd.jpg)
+![111](https://upload-images.jianshu.io/upload_images/6543886-8406cc20651484e3.png)
