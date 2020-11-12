@@ -15,7 +15,7 @@ author: zhangjialun
 配置首页
 
 <!-- more -->
-
+[图片加载失败的外链](https://www.jianshu.com/p/45eff4d32fc5)
 ## 开始
 
 项目属于多模块的统一登录平台，当多个模块进行融合时，路由映射出来的菜单复杂难以处理，菜单管理完美解决该问题。
@@ -38,7 +38,6 @@ author: zhangjialun
 
 - 权限关联
 
-
 ## 异步路由静态路由重新排列
 
 针对所有路由文件与后端进行数据库缓存处理，查询当前用户可使用的路由进行编排。
@@ -55,5 +54,4 @@ author: zhangjialun
 ## 关联权限
 
 已创建的菜单可以通过权限控制进行管理，可以给当前用户或者其他用户分配权限。
-[关联权限外链](https://www.jianshu.com/p/45eff4d32fc5)
 ![关联权限](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/menu/261605163197_.pic_hd.jpg)
