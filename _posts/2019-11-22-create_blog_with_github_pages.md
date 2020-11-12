@@ -62,7 +62,7 @@ author: zhangjialun
 
 ## 自定义标题，边框
 
-进到创建大屏的页面，右上角选择要盛放组件的容器，配置容器名称，横纵占比，容器背景等
+进到创建大屏的页面，右上角选择要放置组件的容器，添加容器名称，横纵占比，容器背景等
 
 ![自定义标题，边框](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.06.01.png)
 
@@ -81,12 +81,12 @@ author: zhangjialun
 ### 可修改配置
 
 大屏在创建成功后会入库保存当前记录，为便于使用者二次进行编辑，提供修改大屏配置
-修改配置会立即切换到配置页面，重新对当天大屏进行修改。
+修改配置会立即切换到配置页面，重新对当前大屏进行修改。
 
 ### 自定义轮询时间
-大屏在配置图标相关维度时，可通过自定义配置的kpi做关联，在此选择期间，可配置轮训时间，统计单位，模块名称等
+大屏在配置图表相关维度时，可通过自定义配置的kpi做关联，在此配置期间，可配置轮训时间，统计单位，模块名称等
 
-![更改社交链接](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.20.28.png)
+![自定义轮询时间](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.20.28.png)
 
 
 ###  echarts图表可拓展性极强
@@ -103,7 +103,7 @@ author: zhangjialun
 但是也对其做了拖拽位置的限制，不可完全拖出容器，拖出将会复位
 布局方式多样，可实现多tab轮播，界面任意DIY
 
-![google分析页面](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.35.36.png)
+![拖拽微调位置](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.35.36.png)
 
 ### 配置首页Dashboard
 
