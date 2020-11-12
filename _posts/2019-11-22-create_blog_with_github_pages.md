@@ -24,7 +24,7 @@ author: zhangjialun
 
 话不多说，直接上图先来看下大屏展示的整体效果。个人比较喜欢这种实用性强的大屏，不要花里胡哨但该有的功也都有。
 
-![展示](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/6.29.38.png)
+![展示](https://zhangjialun555.github.io/images/big_screen/6.29.38.png)
 
 下面列举这个大屏具有的功能特性
 
@@ -57,14 +57,14 @@ author: zhangjialun
 首先你要在大屏配置页面创建新大屏，可选项目标题，描述，是否使用Dashboard，模版背景选择，项目横纵占比等。
 可选主题众多，风格适应相关模块，提供相关主题配色建议。
 
-![更换背景](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/201605081335_.pic_hd.png)
+![更换背景](https://zhangjialun555.github.io/images/big_screen/201605081335_.pic_hd.png)
 
 
 ## 自定义标题，边框
 
 进到创建大屏的页面，右上角选择要放置组件的容器，添加容器名称，横纵占比，容器背景等
 
-![自定义标题，边框](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.06.01.png)
+![自定义标题，边框](https://zhangjialun555.github.io/images/big_screen/9.06.01.png)
 
 
 ## 多组件融合
@@ -76,7 +76,7 @@ author: zhangjialun
 重构大屏代码后可以在一个容器内添加多个组件，并且有非常良好的自适应布局，为使用者解决很大的布局烦恼。
 
 
-![多组件融合](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.12.37.png)
+![多组件融合](https://zhangjialun555.github.io/images/big_screen/9.12.37.png)
 
 ### 可修改配置
 
@@ -86,7 +86,7 @@ author: zhangjialun
 ### 自定义轮询时间
 大屏在配置图表相关维度时，可通过自定义配置的kpi做关联，在此配置期间，可配置轮训时间，统计单位，模块名称等
 
-![自定义轮询时间](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.20.28.png)
+![自定义轮询时间](https://zhangjialun555.github.io/images/big_screen/9.20.28.png)
 
 
 ###  echarts图表可拓展性极强
@@ -95,7 +95,7 @@ author: zhangjialun
 几十种可视化数据效果图，包括折线图，柱状图，3D图，地图等，满足多种需求，提供全面支持。
 
 
-![echarts](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.33.59.png)
+![echarts](https://zhangjialun555.github.io/images/big_screen/9.33.59.png)
 
 ### 拖拽微调位置
 
@@ -103,22 +103,22 @@ author: zhangjialun
 但是也对其做了拖拽位置的限制，不可完全拖出容器，拖出将会复位
 布局方式多样，可实现多tab轮播，界面任意DIY
 
-![拖拽微调位置](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.35.36.png)
+![拖拽微调位置](https://zhangjialun555.github.io/images/big_screen/9.35.36.png)
 
 ### 配置首页Dashboard
 
 无论哪一种数据产品，Dashboard都是最核心的功能，它作为用户接触数据的第一个页面，相当于数据产品的门户，担负着提纲挈领，引导分析的重要职能，帮助用户能够快速判断业务情况，支持他们做出决策并行动。
-![Dashboard](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.35.36.png)
+![Dashboard](https://zhangjialun555.github.io/images/big_screen/9.35.36.png)
 
 ### 大屏组组合
 
 针对不同大屏，可配套组成大屏组，并选择轮播预览动画展示方式。
 可通过下拉框选择要组合的大屏。
 
-![大屏组](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.49.07.png)
+![大屏组](https://zhangjialun555.github.io/images/big_screen/9.49.07.png)
 
 ## 关联权限
 
 已创建的大屏可以通过权限控制进行管理，可以给当前用户或者其他用户分配权限。
 
-![关联权限](https://upload-images.jianshu.io/upload_images/big_screen/9.49.07.png)
+![关联权限](https://zhangjialun555.github.io//images/big_screen/9.49.07.png)
