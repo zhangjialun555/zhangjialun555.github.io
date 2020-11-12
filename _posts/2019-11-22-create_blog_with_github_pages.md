@@ -2,7 +2,7 @@
 layout: post
 title: "可能是最灵活最全面的自定义大屏，让自定义大屏达到新高度"
 date:   2020-11-11
-tags: [geek]
+tags: [customize]
 comments: true
 author: zhangjialun
 ---

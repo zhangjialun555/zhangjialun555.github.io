@@ -1,124 +1,59 @@
 ---
 layout: post
-title: "可能是最灵活最全面的自定义大屏，让自定义大屏达到新高度"
-date:   2020-11-11
-tags: [geek]
+title: "灵活的自定义菜单"
+date:   2020-11-12
+tags: [customize]
 comments: true
 author: zhangjialun
 ---
-无需专门定制开发，轻松制作简介的可视化数据大屏
+异步路由静态路由重新排列
 
-拖拽设计，布局方便
+多模块菜单融合
 
-可视化图表众多
+排序，生序，降序，删除，重命名
 
-可创建不同风格的大屏，其中包含可选背景，边框，颜色，文字等
-
-可权限关联到具体用户，配置相关大屏
-
-可将多个大屏做自由组合，形成可轮播的大屏组
+配置首页
 
 <!-- more -->
 
 ## 开始
 
-话不多说，直接上图先来看下大屏展示的整体效果。个人比较喜欢这种实用性强的大屏，不要花里胡哨但该有的功也都有。
+项目属于多模块的统一登录平台，当多个模块进行融合时，路由映射出来的菜单复杂难以处理，菜单管理完美解决该问题。
 
-![展示](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/6.29.38.png)
+![展示](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/menu/241605162476_.pic_hd.jpg)
 
-下面列举这个大屏具有的功能特性
+下面列举菜单具有的功能特性
 
 ### 支持特性
 
-- 更换背景
+- 异步路由静态路由重新排列
 
-- 自定义标题，边框
+- 多模块菜单融合
 
-- 多组件融合
+- 排序，生序，降序，删除，重命名
 
-- 可修改配置
+- 配置首页
 
-- 自定义轮询时间
+- 支持修改
 
-- echarts图表可拓展性极强
-
-- 拖拽微调位置
-
-- 配置首页Dashboard
-
-- 大屏组组合
-
-- 关联权限
+- 权限关联
 
 
+## 异步路由静态路由重新排列
 
-## 更换背景
-
-首先你要在大屏配置页面创建新大屏，可选项目标题，描述，是否使用Dashboard，模版背景选择，项目横纵占比等。
-可选主题众多，风格适应相关模块，提供相关主题配色建议。
-
-![更换背景](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/201605081335_.pic_hd.png)
+针对所有路由文件与后端进行数据库缓存处理，查询当前用户可使用的路由进行编排。
 
 
-## 自定义标题，边框
+## 排序，生序，降序，删除，重命名
 
-进到创建大屏的页面，右上角选择要盛放组件的容器，配置容器名称，横纵占比，容器背景等
+创建菜单时，可对菜单添加相关描述，关联首页等
+树形结构便于实时预览菜单形成形式，可点击图标重命名，关联模块，删除等。可拖拽菜单节点进行排序，越级，降级等自由组合。
 
-![自定义标题，边框](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.06.01.png)
+![创建菜单](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/menu/251605162830_.pic_hd.jpg)
 
-
-## 多组件融合
-
-自定义大屏在配置与展示上最大的问题之一就是容器与组件的嵌套，如何能够更加自如？
-
-组件与容器分离，简易操作。
-
-重构大屏代码后可以在一个容器内添加多个组件，并且有非常良好的自适应布局，为使用者解决很大的布局烦恼。
-
-
-![多组件融合](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.12.37.png)
-
-### 可修改配置
-
-大屏在创建成功后会入库保存当前记录，为便于使用者二次进行编辑，提供修改大屏配置
-修改配置会立即切换到配置页面，重新对当天大屏进行修改。
-
-### 自定义轮询时间
-大屏在配置图标相关维度时，可通过自定义配置的kpi做关联，在此选择期间，可配置轮训时间，统计单位，模块名称等
-
-![更改社交链接](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.20.28.png)
-
-
-###  echarts图表可拓展性极强
-
-重构大屏后的阶段，为了让开发者更简单的添加组件，只需在单独组件内声明标题和options即可，后期与 后端维护相关数据维度即可。
-几十种可视化数据效果图，包括折线图，柱状图，3D图，地图等，满足多种需求，提供全面支持。
-
-
-![echarts](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.33.59.png)
-
-### 拖拽微调位置
-
-图表位置可如图所示占据当前容器位置，依次应对特殊情况，例如容器填充空隙
-但是也对其做了拖追位置的限制，不可完全拖出容器，拖出将会复位
-布局方式多样，可实现多tab轮播，界面任意DIY
-
-![google分析页面](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.35.36.png)
-
-### 配置首页Dashboard
-
-无论哪一种数据产品，Dashboard都是最核心的功能，它作为用户接触数据的第一个页面，相当于数据产品的门户，担负着提纲挈领，引导分析的重要职能，帮助用户能够快速判断业务情况，支持他们做出决策并行动。
-![Dashboard](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.35.36.png)
-
-### 大屏组组合
-
-针对不同大屏，可配套组成大屏组，并选择轮播预览动画展示方式。
-可通关下拉框选择要组合的大屏。
-
-![大屏组](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.49.07.png)
 
 ## 关联权限
 
-已创建的大屏可以通过权限控制进行管理，可以给当前用户或者其他用户分配权限。
+已创建的菜单可以通过权限控制进行管理，可以给当前用户或者其他用户分配权限。
 
-![关联权限](https://upload-images.jianshu.io/upload_images/big_screen/9.49.07.png)
+![关联权限](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/menu/261605163197_.pic_hd.jpg)
