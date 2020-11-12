@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "可能是最灵活最全面的自定义大屏，让自定义大屏达到新高度"
+title: "可能是最灵活全面的自定义大屏，让自定义大屏达到新高度"
 date:   2020-11-11
 tags: [customize]
 comments: true
@@ -99,8 +99,8 @@ author: zhangjialun
 
 ### 拖拽微调位置
 
-图表位置可如图所示占据当前容器位置，依次应对特殊情况，例如容器填充空隙
-但是也对其做了拖追位置的限制，不可完全拖出容器，拖出将会复位
+图表位置可如图所示占据当前容器位置，以此应对特殊情况，例如容器填充空隙
+但是也对其做了拖拽位置的限制，不可完全拖出容器，拖出将会复位
 布局方式多样，可实现多tab轮播，界面任意DIY
 
 ![google分析页面](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.35.36.png)
@@ -113,7 +113,7 @@ author: zhangjialun
 ### 大屏组组合
 
 针对不同大屏，可配套组成大屏组，并选择轮播预览动画展示方式。
-可通关下拉框选择要组合的大屏。
+可通过下拉框选择要组合的大屏。
 
 ![大屏组](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/big_screen/9.49.07.png)
 
