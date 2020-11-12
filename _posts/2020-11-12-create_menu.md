@@ -54,5 +54,5 @@ author: zhangjialun
 ## 关联权限
 
 已创建的菜单可以通过权限控制进行管理，可以给当前用户或者其他用户分配权限。
-![关联权限](https://zhangjialun555.github.io/lemonchann.github.io/images/menu/261605163197_.pic_hd.jpg)
+![关联权限](https://zhangjialun555.github.io/images/menu/261605163197_.pic_hd.jpg)
 ![112](https://pangcong1117.github.io/myblog/images/%E8%AF%AD%E9%9F%B3%E8%AF%84%E4%BC%B0%E6%A8%A1%E5%BC%8F%E5%9B%BE.png)
