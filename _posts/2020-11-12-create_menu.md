@@ -55,5 +55,5 @@ author: zhangjialun
 ## 关联权限
 
 已创建的菜单可以通过权限控制进行管理，可以给当前用户或者其他用户分配权限。
-![关联权限外链](https://www.jianshu.com/p/45eff4d32fc5)
+[关联权限外链](https://www.jianshu.com/p/45eff4d32fc5)
 ![关联权限](https://raw.githubusercontent.com/zhangjialun555/zhangjialun555.github.io/master/images/menu/261605163197_.pic_hd.jpg)
