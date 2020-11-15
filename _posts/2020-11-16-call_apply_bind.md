@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "call&&apply&&bind"
-date:   2020-11-15
+date:   2020-11-16
 tags: [note]
 comments: true
 author: zhangjialun
