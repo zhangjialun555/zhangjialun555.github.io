@@ -174,3 +174,98 @@ function ProductManager(name, age) {
   console.log(s1 === s1)//true
 </script>
 ```
+
+单例模式的典型应用 Vuex => 一个Vue实例 只能对应一个Store
+
+为什么这么做呢？
+
+Vue 中的组件是相互独立的，组件间的通信也很简单，但是组件非常多且嵌套层级很深，逻辑较为复杂的时候，这时如果还用原有的通信方式就会变得非常难以维护，很容易发生那种牵一发动全身的问题。Vuex就是为了解决这种场景出现，它的出现也大大增强了Vue的健壮性，不再是那个只能构建轻量型的应用的框架了。而他的做法就是把可以共享的数据放在全局，供组件们使用。为了能够让Store中的数据以一种可预测的方式发生变化，那么必然要保证Store中的数据的唯一性 => 单例模式的应用
+
+### 观察者模式
+
+`
+观察者模式定义了一种一对多的依赖关系，让多个观察者对象同时监听某一个目标对象，当这个目标对象的状态发生变化时，会通知所有观察者对象，使它们能够自动更新。
+`
+
+在观察者模式中，至少应该有两个关键角色是一定要出现的——发布者和订阅者。用面向对象的方式表达的话，那就是要有两个类。
+发布者的类具备的基本功能：
+
+- 增加订阅者
+- 移除订阅者
+- 通知订阅者
+
+```html
+<script>
+  class Publisher {
+    constructor () {
+      this.observers = []
+      console.log("publisher is created")
+    }
+    add(observer) {
+      this.observers.push(observer)
+      console.log("add observer")
+    }
+    remove(observer) {
+      this.observers.forEach((item,index) => {
+        if (item === observer) {
+          this.observers.split(1, index)
+        }
+      })
+      console.log("remove observer")
+    }
+    notify () {
+      console.log("notify observer")
+      this.observers.forEach(item => {
+        item.update(this)
+      })
+    }
+  }
+</script>
+```
+
+订阅者的功能：
+
+- 被通知
+
+- 去执行（本质上是接受发布者的调用，这步我们在 Publisher 中已经做了）
+
+既然我们在 Publisher 中做的是方法调用，那么我们在订阅者类里要做的就是方法的定义
+
+```html
+<script>
+  class Observer {
+    constructor() {
+      console.log("observer is created");
+    }
+    update(publish) {
+      console.log("observer is notified");
+    }
+  }
+</script>
+```
+
+插入一段理解vue双向数据绑定的原理理解：
+
+`
+数据驱动：vue.js一个核心的思想是数据驱动。所谓的数据驱动是指视图是由数据驱动生成的，对视图的修改，不会直接操作DOM,而是通过修改数据。相比于传统的前端开发，如使用jq等前端库直接修改DOM，大大简化了代码量，特别是当交互复杂的时候，只关心数据的修改会让代码的逻辑变得非常清晰，因为DOM变成了数据的映射，我们所有的逻辑都是对数据的修改，而不用触碰DOM，这样的代码非常有利于维护。
+`
+在MVVM中，M(model)---代表JavaScript  Objects，V(view)---DOM也就是UI，VM(ViewModel)----代表Vue实例对象（在该对象中有Directives和DOM Listeners）
+
+在vue.js里面只需要改变数据，Vue.js通过Directives指令去对DOM做封装，当数据发生变化，会通知指令去修改对应的DOM，数据驱动DOM的变化，DOM是数据的一种自然的映射。vue.js还会对View操作做一些监听（DOM Listener），当我们修改视图的时候，vue.js监听到这些变化，从而改变数据。这样就形成了数据的双向绑定。
+
+- Vue实现数据双向绑定的原理：
+
+![双向数据绑定](https://zhangjialun555.github.io/images/design_patterns/20180704102901151.png)
+
+如图所示，new Vue一个实例对象a，其中有一个属性a.b,那么在实例化的过程中，通过Object.defineProperty()会对a.b添加getter和setter，同时vue.js会对模版做编译，解析生成一个指令对象（这里是v-text）指令，每个指令对象都会关联watcher,当对a.b求值时，就会触发他的getter，当修改a.b时就会触发他的setter，同时会通知被关联的watcher，然后watcher会再次对a.b求值，计算对比新旧值，当值改变了，watcher就会通知到指令，调用update(),由于指定是对DOM的封装，所以会调用DOM的原生方法去更新时图，这样就完成了数据改变到视图改变的一个自动化过程。
+同时vue还会对DOM做事件监听，如果DOM发生变化，vue监听到了，就会修改相应的data.
+
+#### 总结
+
+直接上总结吧，详细的案例有待研究，不过目前基本已经捋清楚vue双向数据绑定的基本流程
+
+1. 通过observe()函数里的Object.defineProperty()监听UI的变化，从而得到数据的变化；
+再通过compile()函数监听绑定该数据的DOM节点，当数据变化的时候就会通知这些节点更新数据，从而得到UI的变化
+
+2. observe()函数实现监听UI的变化，从而得到数据的更新
+compile()函数监听数据变化，然后将数据传送到绑定的DOM节点上显示。
