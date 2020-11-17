@@ -57,7 +57,7 @@ function ProductManager(name, age) {
 <script>
   function Coder(name, age,career,work) {
     this.name = name
-    this.age -age
+    this.age = age
     this.career = career
     this.work = work
   }
@@ -132,3 +132,45 @@ function ProductManager(name, age) {
 3. 抽象产品（抽象类，它不能被用于生成具体实例）: 上面我们看到，具体工厂里实现的接口，会依赖一些类，这些类对应到各种各样的具体的细粒度产品（比如操作系统、硬件等），这些具体产品类的共性各自抽离，便对应到了各自的抽象产品类。
 
 4. 具体产品（用于生成产品族里的一个具体的产品所依赖的更细粒度的产品）: 比如我们上文中具体的一种操作系统、或具体的一种硬件等。
+
+### 单例模式
+
+只允许存在一个实例的模式
+
+首先我们知道通过类模式，可创建多个实例
+
+```html
+<script>
+  class Single {}
+  const s1 = new Single()
+  const s2 = new Single()
+  console.log(s1===s2)///false
+</script>
+```
+
+两个实例之间没有任何关系，就是两个独立的对象，各占一块内存空间
+
+单例模式想要做到的是，不管我们尝试去创建多少次，它都只给你返回第一次所创建的那唯一的一个实例。
+
+所以我们就要构造函数具备判断自己是否已经创建过一个实例的能力
+
+我们现在把这段判断逻辑写成一个静态方法(其实也可以直接写入构造函数的函数体里）：
+
+```html
+<script>
+  class Single {
+    static GetInstance () {
+      // 判断是否已经new过一个实例
+      if (!SingleDog.instance) {
+        //若实例不存在，创建实例
+        SingleDog.instance = new SingleDog()
+      }
+      //如果实例存在，则返回实例
+      return SingleDog.instance
+    }
+  }
+  const s1 = new Single.GetInstance()
+  const s2 = new Single.GetInstance()
+  console.log(s1 === s1)//true
+</script>
+```
