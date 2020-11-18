@@ -4,6 +4,7 @@ title: "设计模式"
 date:   2020-11-17
 tags: [note]
 comments: true
+toc: true
 author: zhangjialun
 ---
 1. 设计模式类似于前人总结出来的数学公式

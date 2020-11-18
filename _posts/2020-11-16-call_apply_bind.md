@@ -4,6 +4,7 @@ title: "call&&apply&&bind"
 date:   2020-11-16
 tags: [note]
 comments: true
+toc: true
 author: zhangjialun
 ---
 解析this call apply bind
