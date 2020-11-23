@@ -243,3 +243,49 @@ var b = a.fn()
 b.bind(a,1,2)() //3
 </script>
 ```
+
+最终我相信你已经彻底理解了call apply bind改变this指向的极机制了，那下面我们就手动写一个该方法的实例
+
+#### 手写call
+
+```html
+<script>
+Function.protptype.myCall = Function.prototype.myCall || function (context = window, ...args = []) {
+  const key = Symbol()// 给context一个独一无二的属性，以免覆盖原有属性
+  context[key] = this
+  const result = context[key](...args)// 通过隐式绑定的方式调用函数
+  delete context[key] // 删除添加的属性
+  return result//返回函数调用的返回值
+}
+</script>
+```
+
+#### 手写apply
+
+```html
+<script>
+Function.protptype.myApply = Function.prototype.myApply || function (context = window, args = []) {
+  // 参数传递为数组所以直接使用args就好了
+  const key = Symbol()// 给context一个独一无二的属性，以免覆盖原有属性
+  context[key] = this
+  const result = context[key](...args)// 通过隐式绑定的方式调用函数
+  delete context[key] // 删除添加的属性
+  return result//返回函数调用的返回值
+}
+</script>
+```
+
+#### 手写bind
+
+```html
+<script>
+Function.protptype.myBind = Function.prototype.myBind || function (context = window, ...args = []) {
+  context = this
+  return (largs) => { // 返回函数的参数
+    this.apply(context,[...args,...largs])//给返函数绑定函数执行上下文的this，参数为传入和执行时的参数拼接
+  }
+}
+</script>
+```
+
+以上实现其实还可以加很多判断，例如调用的不是function就抛出类型错误等
