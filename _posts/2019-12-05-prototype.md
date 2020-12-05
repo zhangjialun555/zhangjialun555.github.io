@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "js原型和原型链"
-date:   2020-11-11
-tags: [customize]
+date:   2020-12-05
+tags: [note]
 comments: true
 toc: true
 author: zhangjialun
