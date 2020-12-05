@@ -25,7 +25,7 @@ console.log(person.name)// lisa
 </script>
 ```
 
-Person 就是一个构造函数，我们使用new穿创建一个实person
+Person 就是一个构造函数，我们使用new创建一个实person
 
 ### prototype
 
@@ -50,8 +50,11 @@ Person(构造函数) 指向 Person.prototype(实例原型)
 
 ### proto
 
-每一个对象都有自己的(除null)__proto__属性，这个属性会指向该对象的原型。
+每一个对象都有自己的(除null) __proto__ 属性，这个属性会指向该对象的原型。
+
+`
 person.__proto__ === Person.prototype
+`
 
 ![proto](https://zhangjialun555.github.io/images/prototype/WechatIMG59.png)
 
@@ -87,7 +90,7 @@ console.log(Object.getPrototype(person1) === Person.prototype)//true
 ```
 
 在这个例子中，我们给实例person1添加了属性，打印必然为lisa.
-当我删除属性后，读取person.name，从person1对象查找不到就会访问person1的原型也就是person1__proto__。
+当我删除属性后，读取person.name，从person1对象查找不到就会访问person1的原型也就是 (person1__proto__)。
 也就是Person.prototype中查找，幸运的是我们找到了name为IU
 
 ### 原型与原型
@@ -107,6 +110,7 @@ console.log(Object.getPrototype(person1) === Person.prototype)//true
 ```html
 <script>
   console.log(Object.prototype.__proto__ === null)//true
+</script>
 ```
 
 ![原型链](https://zhangjialun555.github.io/images/prototype/WechatIMG62.png)
@@ -115,4 +119,3 @@ console.log(Object.getPrototype(person1) === Person.prototype)//true
   javascript默认不会复制对象的属性。相反，javascript只是在两个对象之间创建一个关联，这样，一个对象就可以通过委托访问另外一个对象的属性和函数。
 所以与其叫继承，委托的说法反而更准确些。
 `
-
