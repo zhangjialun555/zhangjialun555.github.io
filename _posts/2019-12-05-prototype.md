@@ -25,7 +25,7 @@ console.log(person.name)// lisa
 </script>
 ```
 
-Person 就是一个构造函数，我们使用new创建一个实person
+Person 就是一个构造函数，我们使用new创建一个实例person
 
 ### prototype
 
@@ -44,13 +44,13 @@ console.log(person1, person2)// iu iu
 
 ![构造函数](https://zhangjialun555.github.io/images/prototype/WechatIMG58.png)
 
-Person(构造函数) 指向 Person.prototype(实例原型)
+Person(构造函数) 指向 `Person.prototype`(实例原型)
 
-这其实就是我们所说原型继承，缺点就是子实例的时候，其他子实例也会被影响！
+这其实就是我们所说原型继承，缺点就是修改子实例的时候，其他子实例也会被影响！
 
 ### proto
 
-每一个对象都有自己的(除null) __proto__ 属性，这个属性会指向该对象的原型。
+每一个对象都有自己的(除null) `__proto__ `属性，这个属性会指向该对象的原型。
 
 `
 person.__proto__ === Person.prototype
@@ -90,8 +90,8 @@ console.log(Object.getPrototype(person1) === Person.prototype)//true
 ```
 
 在这个例子中，我们给实例person1添加了属性，打印必然为lisa.
-当我删除属性后，读取person.name，从person1对象查找不到就会访问person1的原型也就是 (person1__proto__)。
-也就是Person.prototype中查找，幸运的是我们找到了name为IU
+当我删除属性后，读取person.name，从person1对象查找不到就会访问person1的原型也就是`person1__proto__` 。
+也就是`Person.prototype`中查找，幸运的是我们找到了name为IU
 
 ### 原型与原型
 
